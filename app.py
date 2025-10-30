@@ -48,7 +48,7 @@ if opcao == "Buscar CEP":
                 ###  mapas
 
                     st.title("Localização no Mapa")
-                    df = pd.DataFrame({"Latitude": [endereco[5]], "longitude": [endereco[6]]})
+                    df = pd.DataFrame({"latitude": [endereco[5]], "longitude": [endereco[6]]})
                     st.map(df, zoom=15)
 
                 else:
